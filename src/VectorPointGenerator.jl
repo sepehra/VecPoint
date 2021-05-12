@@ -14,7 +14,7 @@ end
 function wavefront()
     object = open("object.obj", "w")
     count = 1
-    for t in min:steps:max
+    for t in min:step:max
         # Determine the range: replace "max", "min" and "step" with float or integer values
         write(object, "v ")
         write(object, string(x(t), " "))
